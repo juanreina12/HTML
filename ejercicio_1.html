@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO Y LISTAS</title>
+</head>
+<body bgcolor="lightblue">
+<header>
+    <img src="img/incap.png" alt=""
+    width="100" height="100">
+    <h1>LISTAS EN HTML</h1>
+<h2>MENU NAVEGACION</h2>
+</header>
+    <nav>
+<ul>
+    <li type="disc" style="color: white;">HOME</li>
+    <li type="square" style="color: white;">PRODUCTOS</li>
+    <li type="circle" style="color: white;">SERVICIOS</li>
+    <li type="disc" style="color: white;">CONTACTO</li>
+</ul>
+    </nav>
+<section>
+<form action="datos.php" method="post">
+<fieldset>
+<label >Nombre completo</label>
+<input type="text" name="nombre"
+placeholder="ingrese su nombre" required> <br><br> 
+<label >E-mail</label>
+<input type="email" name="email"
+placeholder="ingrese su email" required> <br><br>
+<label >contraseña</label>
+<input type="password" name="password"
+placeholder="ingrese su password" required> <br><br>
+<!-- seccion de hobbies -->
+<label> seleccione tus hobbies
+</label>
+<br>
+<input type="checkbox" name="cine">cine <br>
+<input type="checkbox" name="lectura">lectura <br>
+<input type="checkbox" name="deporte">deporte <br><br>
+<!-- seleccione estado civil -->
+<label>estado civil</label><br>
+<input type="radio" name="estcivil" value="casado"> casado <br> 
+<input type="radio" name="estcivil" value="soltero"> soltero <br>
+<input type="radio" name="estcivil" value="viudo"> viudo <br>
+<br>
+<br>
+    <!-- seleccionar opcion de lista  -->
+<label>PROGRAMAS TECNICOS</label>
+<select name="select">
+<option value="">seleccionar programa</option>
+<option value="">sistemas</option>
+<option value="">diseño grafico</option>
+<option value="">contabilidad</option>
+</select>
+<br><br>
+<!-- seccion de comentarios -->
+<label>tu comentario</label> <br>
+<textarea name="mensaje"  cols="5" rows="40"></textarea>
+</fieldset>
+<br><br>
+<!-- seccion botones // submit: enviar // reset: cancelar -->
+<button type="submit">ENVIAR</button>
+<button type="reset">CANCELAR</button>
+<br><br>
+</form>
+</section>
+<!-- seccion de pie de pagina  -->
+<footer>
+
+derechos reservados &copy;2022 &#64;juan david 
+</footer>
+</body>
+</html>
